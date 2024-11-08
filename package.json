@@ -1,0 +1,15 @@
+{
+  "name": "vue-reactivity-system",
+  "version": "1.0.0",
+  "description": "Package implements and demonstrates how vue reactivity system dependencies work and their under the hood implementation",
+  "main": "lib/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
