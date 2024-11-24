@@ -64,7 +64,7 @@ export type WatchEffect<T> = () => T;
 
 export function watchEffect<T>(callback: WatchEffect<T>){
 
-  let unwatch: () => void | null = null;
+  // let unwatch: () => void | null = null;
   const effect = () => {
     currentEffectStack.push(effect)
     const value = callback();
