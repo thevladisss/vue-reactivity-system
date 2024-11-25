@@ -57,7 +57,17 @@ export function computed<T>(getter: ComputedEffect<T>) {
     return value;
   }
 
-  return effect()
+
+  return {
+    get value() {
+      const effectResult = effect();
+
+      return effectResult;
+    },
+    set value(value) {
+      throw new Error("Computed property is read-only")
+    }
+  }
 }
 
 export type WatchEffect<T> = () => T;
